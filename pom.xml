@@ -11,6 +11,7 @@
     <groupId>com.git.wuqf</groupId>
     <artifactId>spring-cloud-demo</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
     <name>spring-cloud-demo</name>
     <description>spring-cloud-demo</description>
     <properties>
@@ -19,6 +20,8 @@
     </properties>
     <modules>
         <module>eureka-server</module>
+        <module>eureka-service</module>
+        <module>eureka-service-provider</module>
     </modules>
     <dependencyManagement>
         <dependencies>
@@ -32,13 +35,5 @@
         </dependencies>
     </dependencyManagement>
 
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
 
 </project>
