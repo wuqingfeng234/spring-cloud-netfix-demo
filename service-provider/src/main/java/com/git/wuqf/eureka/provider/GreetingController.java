@@ -7,6 +7,8 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.time.ZonedDateTime;
+
 @RestController
 public class GreetingController implements Greeting {
 
@@ -20,7 +22,7 @@ public class GreetingController implements Greeting {
     @Override
     public String greeting() {
         return String.format(
-                "Hello from '%s'!", eurekaClient.getApplication(appName).getName());
+                "Hello from '%s'! date is '%s'", eurekaClient.getApplication(appName).getName(), ZonedDateTime.now());
 
     }
 }

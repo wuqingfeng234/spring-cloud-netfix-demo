@@ -3,6 +3,8 @@ spring:
     name: spring-cloud-service-provider
 server:
   port: 0
+  servlet:
+    context-path: /provider
 eureka:
   client:
     serviceUrl:
