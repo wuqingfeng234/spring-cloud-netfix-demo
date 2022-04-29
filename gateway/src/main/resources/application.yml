@@ -10,7 +10,7 @@ spring:
         - id: consumer-route
           uri: lb://spring-cloud-service-consumer
           predicates:
-          - Path=/**
+          - Path=/consumer/**
 eureka:
   client:
     serviceUrl:

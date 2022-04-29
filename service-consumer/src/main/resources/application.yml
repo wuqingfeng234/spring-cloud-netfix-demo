@@ -3,6 +3,8 @@ spring:
     name: spring-cloud-service-consumer
 server:
   port: 8000
+  servlet:
+    context-path: /consumer
 eureka:
   client:
     serviceUrl:
