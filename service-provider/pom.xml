@@ -7,7 +7,7 @@
         <groupId>com.git.wuqf</groupId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <artifactId>eureka-service-provider</artifactId>
+    <artifactId>service-provider</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>eureka-provider</name>
     <description>eureka-provider</description>
