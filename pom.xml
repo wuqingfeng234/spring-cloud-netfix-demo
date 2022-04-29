@@ -22,7 +22,8 @@
         <module>eureka-server</module>
         <module>eureka-service</module>
         <module>service-provider</module>
-        <module>feign-client</module>
+        <module>service-consumer</module>
+        <module>gateway</module>
     </modules>
     <dependencyManagement>
         <dependencies>

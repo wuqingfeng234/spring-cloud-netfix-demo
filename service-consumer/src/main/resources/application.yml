@@ -1,8 +1,8 @@
 spring:
   application:
-    name: spring-cloud-eureka-feign-client
+    name: spring-cloud-service-consumer
 server:
-  port: 8080
+  port: 8000
 eureka:
   client:
     serviceUrl:

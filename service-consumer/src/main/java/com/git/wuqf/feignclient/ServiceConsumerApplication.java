@@ -6,10 +6,10 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 
 @EnableFeignClients(basePackages = "com.git.wuqf")
 @SpringBootApplication
-public class FeignClientApplication {
+public class ServiceConsumerApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(FeignClientApplication.class, args);
+        SpringApplication.run(ServiceConsumerApplication.class, args);
     }
 
 }

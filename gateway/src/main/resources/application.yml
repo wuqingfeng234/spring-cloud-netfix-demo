@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: spring-cloud-gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: consumer-route
+          uri: lb://spring-cloud-service-consumer
+          predicates:
+          - Path=/**
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
+
+logging:
+  level:
+    org.springframework.cloud.gateway: debug
